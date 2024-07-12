@@ -1,0 +1,15 @@
+
+query Planets {
+  planets {
+    name
+    orderFromSun
+    hasRings
+    surfaceTemperatureC {
+      min
+      max
+      mean
+    }
+    mainAtmosphere
+    _id
+  }
+}

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,24 @@
 		0217AB422C402B6B002A5F98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217AB412C402B6B002A5F98 /* ContentView.swift */; };
 		0217AB442C402B6D002A5F98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0217AB432C402B6D002A5F98 /* Assets.xcassets */; };
 		0217AB472C402B6D002A5F98 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0217AB462C402B6D002A5F98 /* Preview Assets.xcassets */; };
+		0217AB4F2C402BA9002A5F98 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 0217AB4E2C402BA9002A5F98 /* Apollo */; };
+		0217AB512C402BA9002A5F98 /* ApolloWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 0217AB502C402BA9002A5F98 /* ApolloWebSocket */; };
+		0217AB5B2C403C0D002A5F98 /* apollo-codegen-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 0217AB592C403C0D002A5F98 /* apollo-codegen-config.json */; };
+		0217AB5C2C403C0D002A5F98 /* apollo-ios-cli in Resources */ = {isa = PBXBuildFile; fileRef = 0217AB5A2C403C0D002A5F98 /* apollo-ios-cli */; };
+		0217AB5E2C403F30002A5F98 /* graphql_schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = 0217AB5D2C403F30002A5F98 /* graphql_schema.graphqls */; };
+		0217AB602C403FE0002A5F98 /* planetQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0217AB5F2C403FE0002A5F98 /* planetQuery.graphql */; };
+		0217AB652C4040BD002A5F98 /* GraphqlAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0217AB642C4040BD002A5F98 /* GraphqlAPI */; };
+		0217AB682C404311002A5F98 /* PlanetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217AB672C404311002A5F98 /* PlanetListView.swift */; };
+		0217AB6A2C404332002A5F98 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217AB692C404332002A5F98 /* Network.swift */; };
+		0217AB6C2C404487002A5F98 /* PlanetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217AB6B2C404487002A5F98 /* PlanetListViewModel.swift */; };
+		0217AB6E2C404654002A5F98 /* PlanetListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217AB6D2C404654002A5F98 /* PlanetListRow.swift */; };
+		0217AB702C404C80002A5F98 /* View+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217AB6F2C404C80002A5F98 /* View+Alert.swift */; };
+		0217AB722C404DC6002A5F98 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217AB712C404DC6002A5F98 /* NotificationView.swift */; };
+		0217AB752C4052FA002A5F98 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0217AB742C4052FA002A5F98 /* SDWebImage */; };
+		0217AB782C405351002A5F98 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 0217AB772C405351002A5F98 /* SDWebImageSwiftUI */; };
+		02D6AED22C411FC1008D6046 /* PlanetDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6AED12C411FC1008D6046 /* PlanetDetailView.swift */; };
+		02D6AED42C413DDB008D6046 /* PlanetDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D6AED32C413DDB008D6046 /* PlanetDetailViewModel.swift */; };
+		02D6AED62C414591008D6046 /* planetDetailQuery.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 02D6AED52C414591008D6046 /* planetDetailQuery.graphql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +37,19 @@
 		0217AB412C402B6B002A5F98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0217AB432C402B6D002A5F98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0217AB462C402B6D002A5F98 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0217AB592C403C0D002A5F98 /* apollo-codegen-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "apollo-codegen-config.json"; sourceTree = "<group>"; };
+		0217AB5A2C403C0D002A5F98 /* apollo-ios-cli */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "apollo-ios-cli"; sourceTree = "<group>"; };
+		0217AB5D2C403F30002A5F98 /* graphql_schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = graphql_schema.graphqls; sourceTree = "<group>"; };
+		0217AB5F2C403FE0002A5F98 /* planetQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = planetQuery.graphql; sourceTree = "<group>"; };
+		0217AB672C404311002A5F98 /* PlanetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListView.swift; sourceTree = "<group>"; };
+		0217AB692C404332002A5F98 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		0217AB6B2C404487002A5F98 /* PlanetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListViewModel.swift; sourceTree = "<group>"; };
+		0217AB6D2C404654002A5F98 /* PlanetListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetListRow.swift; sourceTree = "<group>"; };
+		0217AB6F2C404C80002A5F98 /* View+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Alert.swift"; sourceTree = "<group>"; };
+		0217AB712C404DC6002A5F98 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		02D6AED12C411FC1008D6046 /* PlanetDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailView.swift; sourceTree = "<group>"; };
+		02D6AED32C413DDB008D6046 /* PlanetDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewModel.swift; sourceTree = "<group>"; };
+		02D6AED52C414591008D6046 /* planetDetailQuery.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = planetDetailQuery.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +57,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0217AB782C405351002A5F98 /* SDWebImageSwiftUI in Frameworks */,
+				0217AB4F2C402BA9002A5F98 /* Apollo in Frameworks */,
+				0217AB512C402BA9002A5F98 /* ApolloWebSocket in Frameworks */,
+				0217AB752C4052FA002A5F98 /* SDWebImage in Frameworks */,
+				0217AB652C4040BD002A5F98 /* GraphqlAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +87,10 @@
 		0217AB3E2C402B6B002A5F98 /* ApolloPlanets */ = {
 			isa = PBXGroup;
 			children = (
+				0217AB662C4042EE002A5F98 /* Service */,
+				0217AB622C40407F002A5F98 /* ViewModel */,
+				0217AB612C404076002A5F98 /* View */,
+				0217AB522C402CB6002A5F98 /* Data */,
 				0217AB3F2C402B6B002A5F98 /* ApolloPlanetsApp.swift */,
 				0217AB412C402B6B002A5F98 /* ContentView.swift */,
 				0217AB432C402B6D002A5F98 /* Assets.xcassets */,
@@ -65,6 +105,87 @@
 				0217AB462C402B6D002A5F98 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0217AB522C402CB6002A5F98 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0217AB542C402CD9002A5F98 /* Operations */,
+				0217AB532C402CC1002A5F98 /* Core */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0217AB532C402CC1002A5F98 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0217AB5D2C403F30002A5F98 /* graphql_schema.graphqls */,
+				0217AB592C403C0D002A5F98 /* apollo-codegen-config.json */,
+				0217AB5A2C403C0D002A5F98 /* apollo-ios-cli */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0217AB542C402CD9002A5F98 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				0217AB582C402D0B002A5F98 /* Mutation */,
+				0217AB572C402CFF002A5F98 /* Query */,
+				0217AB562C402CEE002A5F98 /* Fragment */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		0217AB562C402CEE002A5F98 /* Fragment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fragment;
+			sourceTree = "<group>";
+		};
+		0217AB572C402CFF002A5F98 /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				0217AB5F2C403FE0002A5F98 /* planetQuery.graphql */,
+				02D6AED52C414591008D6046 /* planetDetailQuery.graphql */,
+			);
+			path = Query;
+			sourceTree = "<group>";
+		};
+		0217AB582C402D0B002A5F98 /* Mutation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mutation;
+			sourceTree = "<group>";
+		};
+		0217AB612C404076002A5F98 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0217AB672C404311002A5F98 /* PlanetListView.swift */,
+				0217AB6D2C404654002A5F98 /* PlanetListRow.swift */,
+				0217AB6F2C404C80002A5F98 /* View+Alert.swift */,
+				0217AB712C404DC6002A5F98 /* NotificationView.swift */,
+				02D6AED12C411FC1008D6046 /* PlanetDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0217AB622C40407F002A5F98 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0217AB6B2C404487002A5F98 /* PlanetListViewModel.swift */,
+				02D6AED32C413DDB008D6046 /* PlanetDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0217AB662C4042EE002A5F98 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0217AB692C404332002A5F98 /* Network.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +204,13 @@
 			dependencies = (
 			);
 			name = ApolloPlanets;
+			packageProductDependencies = (
+				0217AB4E2C402BA9002A5F98 /* Apollo */,
+				0217AB502C402BA9002A5F98 /* ApolloWebSocket */,
+				0217AB642C4040BD002A5F98 /* GraphqlAPI */,
+				0217AB742C4052FA002A5F98 /* SDWebImage */,
+				0217AB772C405351002A5F98 /* SDWebImageSwiftUI */,
+			);
 			productName = ApolloPlanets;
 			productReference = 0217AB3C2C402B6B002A5F98 /* ApolloPlanets.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +239,12 @@
 				Base,
 			);
 			mainGroup = 0217AB332C402B6A002A5F98;
+			packageReferences = (
+				0217AB4D2C402BA8002A5F98 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				0217AB632C4040BD002A5F98 /* XCLocalSwiftPackageReference "ApolloPlanets/Data/GraphqlAPI" */,
+				0217AB732C4052FA002A5F98 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				0217AB762C405351002A5F98 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 0217AB3D2C402B6B002A5F98 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +259,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0217AB5E2C403F30002A5F98 /* graphql_schema.graphqls in Resources */,
+				0217AB5B2C403C0D002A5F98 /* apollo-codegen-config.json in Resources */,
+				0217AB602C403FE0002A5F98 /* planetQuery.graphql in Resources */,
 				0217AB472C402B6D002A5F98 /* Preview Assets.xcassets in Resources */,
+				02D6AED62C414591008D6046 /* planetDetailQuery.graphql in Resources */,
+				0217AB5C2C403C0D002A5F98 /* apollo-ios-cli in Resources */,
 				0217AB442C402B6D002A5F98 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +276,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02D6AED22C411FC1008D6046 /* PlanetDetailView.swift in Sources */,
+				0217AB6E2C404654002A5F98 /* PlanetListRow.swift in Sources */,
 				0217AB422C402B6B002A5F98 /* ContentView.swift in Sources */,
+				02D6AED42C413DDB008D6046 /* PlanetDetailViewModel.swift in Sources */,
+				0217AB6C2C404487002A5F98 /* PlanetListViewModel.swift in Sources */,
+				0217AB722C404DC6002A5F98 /* NotificationView.swift in Sources */,
 				0217AB402C402B6B002A5F98 /* ApolloPlanetsApp.swift in Sources */,
+				0217AB6A2C404332002A5F98 /* Network.swift in Sources */,
+				0217AB702C404C80002A5F98 /* View+Alert.swift in Sources */,
+				0217AB682C404311002A5F98 /* PlanetListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +491,67 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		0217AB632C4040BD002A5F98 /* XCLocalSwiftPackageReference "ApolloPlanets/Data/GraphqlAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ApolloPlanets/Data/GraphqlAPI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0217AB4D2C402BA8002A5F98 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.13.0;
+			};
+		};
+		0217AB732C4052FA002A5F98 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.4;
+			};
+		};
+		0217AB762C405351002A5F98 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0217AB4E2C402BA9002A5F98 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0217AB4D2C402BA8002A5F98 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		0217AB502C402BA9002A5F98 /* ApolloWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0217AB4D2C402BA8002A5F98 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloWebSocket;
+		};
+		0217AB642C4040BD002A5F98 /* GraphqlAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GraphqlAPI;
+		};
+		0217AB742C4052FA002A5F98 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0217AB732C4052FA002A5F98 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		0217AB772C405351002A5F98 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0217AB762C405351002A5F98 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0217AB342C402B6A002A5F98 /* Project object */;
 }

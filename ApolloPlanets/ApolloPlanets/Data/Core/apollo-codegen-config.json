@@ -1,0 +1,43 @@
+
+{
+  "schemaNamespace": "GraphqlAPI",
+  
+  "input": {
+    "operationSearchPaths": [
+      "../Operations/Query/*.graphql",
+      "../Operations/Mutation/*.graphql",
+      "../Operations/Fragment/*.graphql"
+    ],
+    "schemaSearchPaths": ["graphql_schema.graphqls"]
+  },
+  "output": {
+    "testMocks": {
+      "none": {}
+    },
+    "schemaTypes": {
+      "path": ".././GraphqlAPI",
+                                 
+      "moduleType": {
+        "swiftPackageManager": {}
+      }
+    },
+    "operations": {
+      "inSchemaModule": {}
+    }
+  },
+  "schemaDownloadConfiguration": {
+    "downloadMethod": {
+      "introspection": {
+        "endpointURL": "http://localhost:4000/",
+        "httpMethod": {
+          "POST": {}
+        },
+        "includeDeprecatedInputValues": false,
+        "outputFormat": "SDL"
+      }
+    },
+    "downloadTimeout": 60,
+    "headers": [],
+    "outputPath": "./graphql_schema.graphqls"
+  }
+}

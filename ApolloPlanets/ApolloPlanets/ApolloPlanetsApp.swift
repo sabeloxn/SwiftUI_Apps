@@ -11,7 +11,7 @@ import SwiftUI
 struct ApolloPlanetsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PlanetListView()
         }
     }
 }

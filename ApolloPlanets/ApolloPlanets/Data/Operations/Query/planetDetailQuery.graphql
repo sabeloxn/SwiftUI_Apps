@@ -1,0 +1,10 @@
+
+query PlanetDetails($id: ID!) {
+  planet(ID: $id) {
+    name
+    orderFromSun
+    hasRings
+    mainAtmosphere
+    _id
+  }
+}
