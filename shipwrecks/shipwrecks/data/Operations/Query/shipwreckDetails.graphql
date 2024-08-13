@@ -1,0 +1,16 @@
+query ShipwreckDetails($id: ID!) {
+  shipwreck(ID: $id) {
+    recrd
+    vesslterms
+    feature_type
+    chart
+    latdec
+    londec
+    gp_quality
+    sounding_type
+    quasou
+    watlev
+    coordinates
+    _id
+  }
+}

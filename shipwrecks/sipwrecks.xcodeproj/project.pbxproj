@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0254121F2C6A213F009C7E04 /* shipwrecks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0254121E2C6A213F009C7E04 /* shipwrecks.swift */; };
+		025412232C6A2141009C7E04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025412222C6A2141009C7E04 /* Assets.xcassets */; };
+		025412262C6A2141009C7E04 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 025412252C6A2141009C7E04 /* Preview Assets.xcassets */; };
+		0254122E2C6A220D009C7E04 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 0254122D2C6A220D009C7E04 /* Apollo */; };
+		025412302C6A220D009C7E04 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 0254122F2C6A220D009C7E04 /* ApolloAPI */; };
+		025412382C6A246C009C7E04 /* apollo-ios-cli in Resources */ = {isa = PBXBuildFile; fileRef = 025412372C6A246C009C7E04 /* apollo-ios-cli */; };
+		0254123A2C6A2574009C7E04 /* apollo-codegen-config.json in Resources */ = {isa = PBXBuildFile; fileRef = 025412392C6A2574009C7E04 /* apollo-codegen-config.json */; };
+		0254123C2C6A27D2009C7E04 /* graphql_schema.graphqls in Resources */ = {isa = PBXBuildFile; fileRef = 0254123B2C6A27D2009C7E04 /* graphql_schema.graphqls */; };
+		025412402C6A2B9D009C7E04 /* shipwrecks.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0254123F2C6A2B9D009C7E04 /* shipwrecks.graphql */; };
+		025412432C6A2BDF009C7E04 /* GraphqlAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 025412422C6A2BDF009C7E04 /* GraphqlAPI */; };
+		02F69B4D2C6B3ADD00D547CA /* ApolloServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F69B4C2C6B3ADD00D547CA /* ApolloServer.swift */; };
+		02F69B502C6B3B6D00D547CA /* ShipwreckListViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F69B4F2C6B3B6D00D547CA /* ShipwreckListViewmodel.swift */; };
+		02F69B532C6B3C8B00D547CA /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F69B522C6B3C8B00D547CA /* AlertView.swift */; };
+		02F69B552C6B3CCB00D547CA /* ShipwreckListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F69B542C6B3CCB00D547CA /* ShipwreckListView.swift */; };
+		02F69B572C6B3D9200D547CA /* ShipWreckRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F69B562C6B3D9200D547CA /* ShipWreckRowView.swift */; };
+		02F69B592C6B445C00D547CA /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F69B582C6B445C00D547CA /* NotificationView.swift */; };
+		02F69B5B2C6B556000D547CA /* ShipwreckDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F69B5A2C6B556000D547CA /* ShipwreckDetailsView.swift */; };
+		02F69B5D2C6B56D400D547CA /* ShipwreckDetailViewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F69B5C2C6B56D400D547CA /* ShipwreckDetailViewmodel.swift */; };
+		02F69B5F2C6B5A6100D547CA /* shipwreckDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 02F69B5E2C6B5A6100D547CA /* shipwreckDetails.graphql */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0254121B2C6A213F009C7E04 /* sipwrecks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sipwrecks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0254121E2C6A213F009C7E04 /* shipwrecks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shipwrecks.swift; sourceTree = "<group>"; };
+		025412222C6A2141009C7E04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		025412252C6A2141009C7E04 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		025412372C6A246C009C7E04 /* apollo-ios-cli */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = "apollo-ios-cli"; path = "Core/apollo-ios-cli"; sourceTree = "<group>"; };
+		025412392C6A2574009C7E04 /* apollo-codegen-config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "apollo-codegen-config.json"; path = "Core/apollo-codegen-config.json"; sourceTree = "<group>"; };
+		0254123B2C6A27D2009C7E04 /* graphql_schema.graphqls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = graphql_schema.graphqls; path = Core/graphql_schema.graphqls; sourceTree = "<group>"; };
+		0254123F2C6A2B9D009C7E04 /* shipwrecks.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = shipwrecks.graphql; sourceTree = "<group>"; };
+		02F69B4C2C6B3ADD00D547CA /* ApolloServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloServer.swift; sourceTree = "<group>"; };
+		02F69B4F2C6B3B6D00D547CA /* ShipwreckListViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipwreckListViewmodel.swift; sourceTree = "<group>"; };
+		02F69B522C6B3C8B00D547CA /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		02F69B542C6B3CCB00D547CA /* ShipwreckListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipwreckListView.swift; sourceTree = "<group>"; };
+		02F69B562C6B3D9200D547CA /* ShipWreckRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipWreckRowView.swift; sourceTree = "<group>"; };
+		02F69B582C6B445C00D547CA /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		02F69B5A2C6B556000D547CA /* ShipwreckDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipwreckDetailsView.swift; sourceTree = "<group>"; };
+		02F69B5C2C6B56D400D547CA /* ShipwreckDetailViewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipwreckDetailViewmodel.swift; sourceTree = "<group>"; };
+		02F69B5E2C6B5A6100D547CA /* shipwreckDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = shipwreckDetails.graphql; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		025412182C6A213F009C7E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				025412302C6A220D009C7E04 /* ApolloAPI in Frameworks */,
+				0254122E2C6A220D009C7E04 /* Apollo in Frameworks */,
+				025412432C6A2BDF009C7E04 /* GraphqlAPI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		025412122C6A213F009C7E04 = {
+			isa = PBXGroup;
+			children = (
+				0254121D2C6A213F009C7E04 /* shipwrecks */,
+				0254121C2C6A213F009C7E04 /* Products */,
+				025412442C6A2BFC009C7E04 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0254121C2C6A213F009C7E04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0254121B2C6A213F009C7E04 /* sipwrecks.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0254121D2C6A213F009C7E04 /* shipwrecks */ = {
+			isa = PBXGroup;
+			children = (
+				02F69B512C6B3C6500D547CA /* View */,
+				02F69B4E2C6B3B1300D547CA /* ViewModel */,
+				02F69B4B2C6B3AAC00D547CA /* Service */,
+				025412312C6A2220009C7E04 /* data */,
+				0254121E2C6A213F009C7E04 /* shipwrecks.swift */,
+				025412222C6A2141009C7E04 /* Assets.xcassets */,
+				025412242C6A2141009C7E04 /* Preview Content */,
+			);
+			path = shipwrecks;
+			sourceTree = "<group>";
+		};
+		025412242C6A2141009C7E04 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				025412252C6A2141009C7E04 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		025412312C6A2220009C7E04 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				0254123B2C6A27D2009C7E04 /* graphql_schema.graphqls */,
+				025412392C6A2574009C7E04 /* apollo-codegen-config.json */,
+				025412372C6A246C009C7E04 /* apollo-ios-cli */,
+				025412332C6A2235009C7E04 /* Operations */,
+				025412322C6A222C009C7E04 /* Core */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		025412322C6A222C009C7E04 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		025412332C6A2235009C7E04 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				025412362C6A224E009C7E04 /* Mutation */,
+				025412352C6A2245009C7E04 /* Query */,
+				025412342C6A223E009C7E04 /* Fragment */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		025412342C6A223E009C7E04 /* Fragment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fragment;
+			sourceTree = "<group>";
+		};
+		025412352C6A2245009C7E04 /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				0254123F2C6A2B9D009C7E04 /* shipwrecks.graphql */,
+				02F69B5E2C6B5A6100D547CA /* shipwreckDetails.graphql */,
+			);
+			path = Query;
+			sourceTree = "<group>";
+		};
+		025412362C6A224E009C7E04 /* Mutation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mutation;
+			sourceTree = "<group>";
+		};
+		025412442C6A2BFC009C7E04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		02F69B4B2C6B3AAC00D547CA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				02F69B4C2C6B3ADD00D547CA /* ApolloServer.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		02F69B4E2C6B3B1300D547CA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				02F69B4F2C6B3B6D00D547CA /* ShipwreckListViewmodel.swift */,
+				02F69B5C2C6B56D400D547CA /* ShipwreckDetailViewmodel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		02F69B512C6B3C6500D547CA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02F69B522C6B3C8B00D547CA /* AlertView.swift */,
+				02F69B542C6B3CCB00D547CA /* ShipwreckListView.swift */,
+				02F69B562C6B3D9200D547CA /* ShipWreckRowView.swift */,
+				02F69B582C6B445C00D547CA /* NotificationView.swift */,
+				02F69B5A2C6B556000D547CA /* ShipwreckDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0254121A2C6A213F009C7E04 /* sipwrecks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 025412292C6A2141009C7E04 /* Build configuration list for PBXNativeTarget "sipwrecks" */;
+			buildPhases = (
+				025412172C6A213F009C7E04 /* Sources */,
+				025412182C6A213F009C7E04 /* Frameworks */,
+				025412192C6A213F009C7E04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sipwrecks;
+			packageProductDependencies = (
+				0254122D2C6A220D009C7E04 /* Apollo */,
+				0254122F2C6A220D009C7E04 /* ApolloAPI */,
+				025412422C6A2BDF009C7E04 /* GraphqlAPI */,
+			);
+			productName = nairbnb;
+			productReference = 0254121B2C6A213F009C7E04 /* sipwrecks.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		025412132C6A213F009C7E04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					0254121A2C6A213F009C7E04 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 025412162C6A213F009C7E04 /* Build configuration list for PBXProject "sipwrecks" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 025412122C6A213F009C7E04;
+			packageReferences = (
+				0254122C2C6A220D009C7E04 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				025412412C6A2BDF009C7E04 /* XCLocalSwiftPackageReference "shipwrecks/data/GraphqlAPI" */,
+			);
+			productRefGroup = 0254121C2C6A213F009C7E04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0254121A2C6A213F009C7E04 /* sipwrecks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		025412192C6A213F009C7E04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0254123C2C6A27D2009C7E04 /* graphql_schema.graphqls in Resources */,
+				025412262C6A2141009C7E04 /* Preview Assets.xcassets in Resources */,
+				02F69B5F2C6B5A6100D547CA /* shipwreckDetails.graphql in Resources */,
+				025412382C6A246C009C7E04 /* apollo-ios-cli in Resources */,
+				0254123A2C6A2574009C7E04 /* apollo-codegen-config.json in Resources */,
+				025412402C6A2B9D009C7E04 /* shipwrecks.graphql in Resources */,
+				025412232C6A2141009C7E04 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		025412172C6A213F009C7E04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F69B532C6B3C8B00D547CA /* AlertView.swift in Sources */,
+				02F69B4D2C6B3ADD00D547CA /* ApolloServer.swift in Sources */,
+				02F69B5D2C6B56D400D547CA /* ShipwreckDetailViewmodel.swift in Sources */,
+				02F69B572C6B3D9200D547CA /* ShipWreckRowView.swift in Sources */,
+				02F69B592C6B445C00D547CA /* NotificationView.swift in Sources */,
+				02F69B5B2C6B556000D547CA /* ShipwreckDetailsView.swift in Sources */,
+				0254121F2C6A213F009C7E04 /* shipwrecks.swift in Sources */,
+				02F69B502C6B3B6D00D547CA /* ShipwreckListViewmodel.swift in Sources */,
+				02F69B552C6B3CCB00D547CA /* ShipwreckListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		025412272C6A2141009C7E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		025412282C6A2141009C7E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0254122A2C6A2141009C7E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"shipwrecks/Preview Content\"";
+				DEVELOPMENT_TEAM = 22L97FCDGW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabelo.nairbnb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0254122B2C6A2141009C7E04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"shipwrecks/Preview Content\"";
+				DEVELOPMENT_TEAM = 22L97FCDGW;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabelo.nairbnb;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		025412162C6A213F009C7E04 /* Build configuration list for PBXProject "sipwrecks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				025412272C6A2141009C7E04 /* Debug */,
+				025412282C6A2141009C7E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		025412292C6A2141009C7E04 /* Build configuration list for PBXNativeTarget "sipwrecks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0254122A2C6A2141009C7E04 /* Debug */,
+				0254122B2C6A2141009C7E04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		025412412C6A2BDF009C7E04 /* XCLocalSwiftPackageReference "shipwrecks/data/GraphqlAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = shipwrecks/data/GraphqlAPI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0254122C2C6A220D009C7E04 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.14.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0254122D2C6A220D009C7E04 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0254122C2C6A220D009C7E04 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		0254122F2C6A220D009C7E04 /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0254122C2C6A220D009C7E04 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+		025412422C6A2BDF009C7E04 /* GraphqlAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GraphqlAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 025412132C6A213F009C7E04 /* Project object */;
+}

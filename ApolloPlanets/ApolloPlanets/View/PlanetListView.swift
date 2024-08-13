@@ -10,7 +10,7 @@ import SwiftUI
 struct PlanetListView: View {
     @StateObject private var viewModel = PlanetListViewModel()
     var body: some View {
-        NavigationView {
+        NavigationStack {
             List {
                 ForEach(0..<viewModel.planets.count, id: \.self) { index in
                     PlanetListRow(planet: viewModel.planets[index])
