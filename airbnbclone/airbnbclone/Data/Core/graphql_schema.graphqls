@@ -1,0 +1,136 @@
+"""
+A directive used by the Apollo iOS client to annotate operations or fragments that should be used exclusively for generating local cache mutations instead of as standard operations.
+"""
+directive @apollo_client_ios_localCacheMutation on QUERY | MUTATION | SUBSCRIPTION | FRAGMENT_DEFINITION
+
+"""
+A directive used by the Apollo iOS code generation engine to generate custom import statements in operation or fragment definition files. An import statement to import a module with the name provided in the `module` argument will be added to the generated definition file.
+"""
+directive @import(
+  """The name of the module to import."""
+  module: String!
+) repeatable on QUERY | MUTATION | SUBSCRIPTION | FRAGMENT_DEFINITION
+
+"""
+Directs the executor to defer this fragment when the `if` argument is true or undefined.
+"""
+directive @defer(
+  """Deferred when true or undefined."""
+  if: Boolean
+
+  """Unique name"""
+  label: String
+) on FRAGMENT_SPREAD | INLINE_FRAGMENT
+
+type listingsandreviews {
+  _id: String
+  listing_url: String
+  name: String
+  summary: String
+  space: String
+  neighborhood_overview: String
+  notes: String
+  transit: String
+  access: String
+  interaction: String
+  house_rules: String
+  property_type: String
+  room_type: String
+  bed_type: String
+  minimum_nights: String
+  maximum_nights: String
+  cancellation_policy: String
+  first_review: String
+  last_review: String
+  accommodates: Int
+  bedrooms: Int
+  beds: Int
+  number_of_reviews: Int
+  bathrooms: Float
+  amenities: [String]
+  price: Float
+  weekly_price: Float
+  monthly_price: Float
+  cleaning_fee: Float
+  extra_people: Float
+  guests_included: Int
+  images: images
+  host: host
+  address: address
+  availability: availability
+  review_scores: review_scores
+  reviews: [reviews]
+}
+
+type images {
+  thumbnail_url: String
+  medium_url: String
+  picture_url: String
+  xl_picture_url: String
+}
+
+type host {
+  host_id: String
+  host_url: String
+  host_name: String
+  host_location: String
+  host_about: String
+  host_response_time: String
+  host_thumbnail_url: String
+  host_picture_url: String
+  host_neighbourhood: String
+  host_response_rate: Int
+  host_is_superhost: Boolean
+  host_has_profile_pic: Boolean
+  host_identity_verified: Boolean
+  host_listings_count: Int
+  host_total_listings_count: Int
+  host_verifications: [String]
+}
+
+type address {
+  street: String
+  suburb: String
+  government_area: String
+  market: String
+  country: String
+  country_code: String
+  location: location
+}
+
+type location {
+  type: String
+  coordinates: [Float]
+  is_location_exact: Boolean
+}
+
+type availability {
+  availability_30: Int
+  availability_60: Int
+  availability_90: Int
+  availability_365: Int
+}
+
+type review_scores {
+  review_scores_accuracy: Int
+  review_scores_cleanliness: Int
+  review_scores_checkin: Int
+  review_scores_communication: Int
+  review_scores_location: Int
+  review_scores_value: Int
+  review_scores_rating: Int
+}
+
+type reviews {
+  _id: String
+  date: String
+  listing_id: String
+  reviewer_id: String
+  reviewer_name: String
+  comments: String
+}
+
+type Query {
+  listingAndReview(ID: ID!): listingsandreviews!
+  listingsAndReviews(ID: ID): [listingsandreviews]!
+}

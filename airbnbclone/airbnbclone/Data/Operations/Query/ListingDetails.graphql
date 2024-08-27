@@ -1,0 +1,28 @@
+
+query ListingDetails($id: ID!) {
+  listingAndReview(ID: $id) {
+    _id
+    name
+    host {
+      host_name
+      host_about
+      host_identity_verified
+      host_has_profile_pic
+      host_picture_url
+    }
+    summary
+    address {
+      location {
+        coordinates
+      }
+    }
+    neighborhood_overview
+    accommodates
+    price
+    images {
+      picture_url
+    }
+    minimum_nights
+    maximum_nights
+  }
+}

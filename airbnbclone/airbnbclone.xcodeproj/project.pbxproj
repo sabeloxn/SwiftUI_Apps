@@ -3,22 +3,49 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		02A36B092C7DC24D0068230C /* airbnbcloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A36B082C7DC24D0068230C /* airbnbcloneApp.swift */; };
-		02A36B0B2C7DC24D0068230C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A36B0A2C7DC24D0068230C /* ContentView.swift */; };
+		02A36B0B2C7DC24D0068230C /* Explore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A36B0A2C7DC24D0068230C /* Explore.swift */; };
 		02A36B0D2C7DC24E0068230C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A36B0C2C7DC24E0068230C /* Assets.xcassets */; };
 		02A36B102C7DC24E0068230C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02A36B0F2C7DC24E0068230C /* Preview Assets.xcassets */; };
+		02A36B182C7DC2D90068230C /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 02A36B172C7DC2D90068230C /* Apollo */; };
+		02A36B1A2C7DC2D90068230C /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 02A36B192C7DC2D90068230C /* ApolloAPI */; };
+		02A36B242C7DC4B50068230C /* Icons.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 02A36B232C7DC4B50068230C /* Icons.graphql */; };
+		02A36B272C7DC7A80068230C /* AirbnbcloneAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 02A36B262C7DC7A80068230C /* AirbnbcloneAPI */; };
+		02A36B2A2C7DC8C40068230C /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A36B292C7DC8C40068230C /* WishlistView.swift */; };
+		02A36B2C2C7DC8D40068230C /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A36B2B2C7DC8D40068230C /* TripsView.swift */; };
+		02A36B2F2C7DC8ED0068230C /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A36B2E2C7DC8ED0068230C /* InboxView.swift */; };
+		02A36B312C7DC8FF0068230C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A36B302C7DC8FF0068230C /* LoginView.swift */; };
+		02A36B332C7DCC530068230C /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A36B322C7DCC530068230C /* HomeView.swift */; };
+		02A36B362C7DCF9C0068230C /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A36B352C7DCF9C0068230C /* ExploreViewModel.swift */; };
+		02A36B382C7DD00F0068230C /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A36B372C7DD00F0068230C /* Network.swift */; };
+		02A36B3A2C7DD3350068230C /* IconRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A36B392C7DD3350068230C /* IconRow.swift */; };
+		02A36B3C2C7DE0240068230C /* ListingDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A36B3B2C7DE0240068230C /* ListingDetailsView.swift */; };
+		02A36B3E2C7DE0960068230C /* ListingDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02A36B3D2C7DE0960068230C /* ListingDetailsViewModel.swift */; };
+		02A36B402C7DE44D0068230C /* ListingDetails.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 02A36B3F2C7DE44D0068230C /* ListingDetails.graphql */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02A36B052C7DC24D0068230C /* airbnbclone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = airbnbclone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		02A36B082C7DC24D0068230C /* airbnbcloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = airbnbcloneApp.swift; sourceTree = "<group>"; };
-		02A36B0A2C7DC24D0068230C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		02A36B0A2C7DC24D0068230C /* Explore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explore.swift; sourceTree = "<group>"; };
 		02A36B0C2C7DC24E0068230C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		02A36B0F2C7DC24E0068230C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		02A36B232C7DC4B50068230C /* Icons.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Icons.graphql; sourceTree = "<group>"; };
+		02A36B292C7DC8C40068230C /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
+		02A36B2B2C7DC8D40068230C /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
+		02A36B2E2C7DC8ED0068230C /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
+		02A36B302C7DC8FF0068230C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		02A36B322C7DCC530068230C /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		02A36B352C7DCF9C0068230C /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		02A36B372C7DD00F0068230C /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		02A36B392C7DD3350068230C /* IconRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconRow.swift; sourceTree = "<group>"; };
+		02A36B3B2C7DE0240068230C /* ListingDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailsView.swift; sourceTree = "<group>"; };
+		02A36B3D2C7DE0960068230C /* ListingDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingDetailsViewModel.swift; sourceTree = "<group>"; };
+		02A36B3F2C7DE44D0068230C /* ListingDetails.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = ListingDetails.graphql; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02A36B272C7DC7A80068230C /* AirbnbcloneAPI in Frameworks */,
+				02A36B1A2C7DC2D90068230C /* ApolloAPI in Frameworks */,
+				02A36B182C7DC2D90068230C /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,10 +81,13 @@
 		02A36B072C7DC24D0068230C /* airbnbclone */ = {
 			isa = PBXGroup;
 			children = (
+				02A36B342C7DCF7D0068230C /* ViewModel */,
+				02A36B282C7DC8020068230C /* View */,
+				02A36B1B2C7DC2F80068230C /* Data */,
 				02A36B082C7DC24D0068230C /* airbnbcloneApp.swift */,
-				02A36B0A2C7DC24D0068230C /* ContentView.swift */,
 				02A36B0C2C7DC24E0068230C /* Assets.xcassets */,
 				02A36B0E2C7DC24E0068230C /* Preview Content */,
+				02A36B372C7DD00F0068230C /* Network.swift */,
 			);
 			path = airbnbclone;
 			sourceTree = "<group>";
@@ -65,6 +98,79 @@
 				02A36B0F2C7DC24E0068230C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		02A36B1B2C7DC2F80068230C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				02A36B1D2C7DC3100068230C /* Operations */,
+				02A36B1C2C7DC3080068230C /* Core */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		02A36B1C2C7DC3080068230C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		02A36B1D2C7DC3100068230C /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				02A36B202C7DC3300068230C /* Mutation */,
+				02A36B1F2C7DC3240068230C /* Query */,
+				02A36B1E2C7DC31B0068230C /* Fragment */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		02A36B1E2C7DC31B0068230C /* Fragment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fragment;
+			sourceTree = "<group>";
+		};
+		02A36B1F2C7DC3240068230C /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				02A36B232C7DC4B50068230C /* Icons.graphql */,
+				02A36B3F2C7DE44D0068230C /* ListingDetails.graphql */,
+			);
+			path = Query;
+			sourceTree = "<group>";
+		};
+		02A36B202C7DC3300068230C /* Mutation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mutation;
+			sourceTree = "<group>";
+		};
+		02A36B282C7DC8020068230C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				02A36B0A2C7DC24D0068230C /* Explore.swift */,
+				02A36B292C7DC8C40068230C /* WishlistView.swift */,
+				02A36B2B2C7DC8D40068230C /* TripsView.swift */,
+				02A36B2E2C7DC8ED0068230C /* InboxView.swift */,
+				02A36B302C7DC8FF0068230C /* LoginView.swift */,
+				02A36B322C7DCC530068230C /* HomeView.swift */,
+				02A36B392C7DD3350068230C /* IconRow.swift */,
+				02A36B3B2C7DE0240068230C /* ListingDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		02A36B342C7DCF7D0068230C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				02A36B352C7DCF9C0068230C /* ExploreViewModel.swift */,
+				02A36B3D2C7DE0960068230C /* ListingDetailsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +189,11 @@
 			dependencies = (
 			);
 			name = airbnbclone;
+			packageProductDependencies = (
+				02A36B172C7DC2D90068230C /* Apollo */,
+				02A36B192C7DC2D90068230C /* ApolloAPI */,
+				02A36B262C7DC7A80068230C /* AirbnbcloneAPI */,
+			);
 			productName = airbnbclone;
 			productReference = 02A36B052C7DC24D0068230C /* airbnbclone.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +222,10 @@
 				Base,
 			);
 			mainGroup = 02A36AFC2C7DC24D0068230C;
+			packageReferences = (
+				02A36B162C7DC2D80068230C /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				02A36B252C7DC7A70068230C /* XCLocalSwiftPackageReference "airbnbclone/Data/airbnbcloneAPI" */,
+			);
 			productRefGroup = 02A36B062C7DC24D0068230C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +240,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02A36B242C7DC4B50068230C /* Icons.graphql in Resources */,
 				02A36B102C7DC24E0068230C /* Preview Assets.xcassets in Resources */,
 				02A36B0D2C7DC24E0068230C /* Assets.xcassets in Resources */,
+				02A36B402C7DE44D0068230C /* ListingDetails.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +254,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02A36B0B2C7DC24D0068230C /* ContentView.swift in Sources */,
+				02A36B3E2C7DE0960068230C /* ListingDetailsViewModel.swift in Sources */,
+				02A36B312C7DC8FF0068230C /* LoginView.swift in Sources */,
+				02A36B332C7DCC530068230C /* HomeView.swift in Sources */,
+				02A36B0B2C7DC24D0068230C /* Explore.swift in Sources */,
+				02A36B3A2C7DD3350068230C /* IconRow.swift in Sources */,
+				02A36B2A2C7DC8C40068230C /* WishlistView.swift in Sources */,
+				02A36B362C7DCF9C0068230C /* ExploreViewModel.swift in Sources */,
+				02A36B382C7DD00F0068230C /* Network.swift in Sources */,
+				02A36B2F2C7DC8ED0068230C /* InboxView.swift in Sources */,
 				02A36B092C7DC24D0068230C /* airbnbcloneApp.swift in Sources */,
+				02A36B2C2C7DC8D40068230C /* TripsView.swift in Sources */,
+				02A36B3C2C7DE0240068230C /* ListingDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +471,41 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		02A36B252C7DC7A70068230C /* XCLocalSwiftPackageReference "airbnbclone/Data/airbnbcloneAPI" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = airbnbclone/Data/airbnbcloneAPI;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		02A36B162C7DC2D80068230C /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		02A36B172C7DC2D90068230C /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02A36B162C7DC2D80068230C /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		02A36B192C7DC2D90068230C /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 02A36B162C7DC2D80068230C /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+		02A36B262C7DC7A80068230C /* AirbnbcloneAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AirbnbcloneAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 02A36AFD2C7DC24D0068230C /* Project object */;
 }

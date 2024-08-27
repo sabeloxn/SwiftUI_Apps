@@ -1,0 +1,15 @@
+
+query Icons($id: ID) {
+  listingsAndReviews(ID: $id) {
+    _id
+    listing_url
+    name
+    price
+    host {
+      host_name
+    }
+    images {
+      picture_url
+    }
+  }
+}
