@@ -17,9 +17,7 @@ struct ShipwreckDetailsView: View {
                 }
             }
         }
-        .task {
-            vm.loadShipwreckDetails()
-        }
+        
         .padding(10)
         .navigationBarTitleDisplayMode(.inline)
         .appAlert($vm.appAlert)

@@ -19,7 +19,7 @@ class ListingDetailsViewmodel: ObservableObject {
         self.listingID = listingID
     }
     
-    func loadShipwreckDetails() {
+    func loadListingDetails() {
         guard listingID != listing?._id else {
                 return
             }

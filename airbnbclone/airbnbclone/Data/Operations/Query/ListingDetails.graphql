@@ -1,4 +1,3 @@
-
 query ListingDetails($id: ID!) {
   listingAndReview(ID: $id) {
     _id
@@ -9,12 +8,14 @@ query ListingDetails($id: ID!) {
       host_identity_verified
       host_has_profile_pic
       host_picture_url
+      host_listings_count
     }
     summary
     address {
       location {
         coordinates
       }
+      street
     }
     neighborhood_overview
     accommodates
@@ -24,5 +25,6 @@ query ListingDetails($id: ID!) {
     }
     minimum_nights
     maximum_nights
+    guests_included
   }
 }

@@ -41,7 +41,7 @@ struct IconRow: View {
                             }
                             .padding()
                             .background(.lightGray)
-                            .cornerRadius(5)
+                            .cornerRadius(15)
                             
                             Spacer()
                             //share button
@@ -53,7 +53,7 @@ struct IconRow: View {
                             }
                             .padding()
                             .background(.lightGray)
-                            .cornerRadius(5)
+                            .cornerRadius(25)
                         }
                         .padding()
                         .frame(height: 300)

@@ -7,7 +7,7 @@ public class ListingDetailsQuery: GraphQLQuery {
   public static let operationName: String = "ListingDetails"
   public static let operationDocument: ApolloAPI.OperationDocument = .init(
     definition: .init(
-      #"query ListingDetails($id: ID!) { listingAndReview(ID: $id) { __typename _id name host { __typename host_name host_about host_identity_verified host_has_profile_pic host_picture_url } summary address { __typename location { __typename coordinates } } neighborhood_overview accommodates price images { __typename picture_url } minimum_nights maximum_nights } }"#
+      #"query ListingDetails($id: ID!) { listingAndReview(ID: $id) { __typename _id name host { __typename host_name host_about host_identity_verified host_has_profile_pic host_picture_url host_listings_count } summary address { __typename location { __typename coordinates } street } neighborhood_overview accommodates price images { __typename picture_url } minimum_nights maximum_nights guests_included } }"#
     ))
 
   public var id: ID
@@ -50,6 +50,7 @@ public class ListingDetailsQuery: GraphQLQuery {
         .field("images", Images?.self),
         .field("minimum_nights", String?.self),
         .field("maximum_nights", String?.self),
+        .field("guests_included", Int?.self),
       ] }
 
       public var _id: String? { __data["_id"] }
@@ -63,6 +64,7 @@ public class ListingDetailsQuery: GraphQLQuery {
       public var images: Images? { __data["images"] }
       public var minimum_nights: String? { __data["minimum_nights"] }
       public var maximum_nights: String? { __data["maximum_nights"] }
+      public var guests_included: Int? { __data["guests_included"] }
 
       /// ListingAndReview.Host
       ///
@@ -79,6 +81,7 @@ public class ListingDetailsQuery: GraphQLQuery {
           .field("host_identity_verified", Bool?.self),
           .field("host_has_profile_pic", Bool?.self),
           .field("host_picture_url", String?.self),
+          .field("host_listings_count", Int?.self),
         ] }
 
         public var host_name: String? { __data["host_name"] }
@@ -86,6 +89,7 @@ public class ListingDetailsQuery: GraphQLQuery {
         public var host_identity_verified: Bool? { __data["host_identity_verified"] }
         public var host_has_profile_pic: Bool? { __data["host_has_profile_pic"] }
         public var host_picture_url: String? { __data["host_picture_url"] }
+        public var host_listings_count: Int? { __data["host_listings_count"] }
       }
 
       /// ListingAndReview.Address
@@ -99,9 +103,11 @@ public class ListingDetailsQuery: GraphQLQuery {
         public static var __selections: [ApolloAPI.Selection] { [
           .field("__typename", String.self),
           .field("location", Location?.self),
+          .field("street", String?.self),
         ] }
 
         public var location: Location? { __data["location"] }
+        public var street: String? { __data["street"] }
 
         /// ListingAndReview.Address.Location
         ///

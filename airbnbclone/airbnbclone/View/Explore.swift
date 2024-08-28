@@ -16,12 +16,9 @@ struct Explore: View {
                 .padding(.leading)
                 List {
                     ForEach(0..<vm.listings.count, id: \.self) { index in
-                        NavigationLink {
-                            ListingDetailsView(listingID: vm.listings[index]._id!)
-                        } label: {
-                            IconRow(listing: vm.listings[index] )
+                        NavigationLink(destination: ListingDetailsView(listingID: vm.listings[index]._id!)) {
+                            IconRow(listing: vm.listings[index])
                         }
-                        
                     }
                 }
                 .listRowSeparator(.hidden)
