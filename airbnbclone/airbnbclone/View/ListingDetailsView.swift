@@ -10,7 +10,7 @@ import AirbnbcloneAPI
 import MapKit
 
 struct ListingDetailsView: View {
-    
+    @Environment(\.presentationMode) var presentationMode
     @StateObject private var vm: ListingDetailsViewmodel
         
     init(listingID: AirbnbcloneAPI.ID) {
@@ -20,8 +20,10 @@ struct ListingDetailsView: View {
        
         NavigationStack{
             ScrollView{
+                
                 VStack{
                     if let listing = vm.listing {
+                        ZStack{
                             //image tabview
                             TabView{
                                 AsyncImage(url: URL(string: listing.images?.picture_url ?? "icon image")) { image in
@@ -31,9 +33,63 @@ struct ListingDetailsView: View {
                                 }
                                 .frame(width: UIScreen.main.bounds.width, height: 400)
                                 .cornerRadius(5.0)
-                        }//zstack
+                        }
                         .ignoresSafeArea()
                         .frame(height: 300)
+                        VStack{
+                            //
+                            HStack{
+                                //live button
+                                
+                                Button {
+                                    presentationMode.wrappedValue.dismiss()
+                                } label: {
+                                    Image(systemName: "chevron.backward")
+                                        .fontWeight(.semibold)
+                                        .tint(.darkGray)
+                                        .font(.system(size: 14))
+                                }
+                                .frame(width: 20, height: 20)
+                                .padding(.all, 8)
+                                .background(.lightGray)
+                                .cornerRadius(45)
+                                
+                                Spacer()
+                                //share button
+                                Button {
+                                    print()
+                                } label: {
+                                    Image(systemName: "square.and.arrow.up")
+                                        .fontWeight(.semibold)
+                                        .tint(.darkGray)
+                                        .font(.system(size: 14))
+                                }
+                                .frame(width: 20, height: 20)
+                                .padding(.all, 8)
+                                .background(.lightGray)
+                                .cornerRadius(45)
+                                //share button
+                                Button {
+                                    print()
+                                } label: {
+                                    Image(systemName: "heart")
+                                        .fontWeight(.semibold)
+                                        .tint(.darkGray)
+                                        .font(.system(size: 14))
+                                }
+                                .frame(width: 20, height: 20)
+                                .padding(.all, 8)
+                                .background(.lightGray)
+                                .cornerRadius(45)
+                            }//Hstack
+                            .padding(.horizontal)
+                            .padding(.top, 50)
+                            Spacer()
+                        }
+//                        .padding(.leading, 12)
+                        Spacer()
+                        }
+
                         
                         VStack(alignment: .leading){
                             Text(listing.name!)
@@ -65,6 +121,7 @@ struct ListingDetailsView: View {
                                 Spacer()
                             }
                         }
+                        .padding(.horizontal, 12)
                         Divider()
                         //meet your host
                         VStack (alignment: .leading){
@@ -73,6 +130,7 @@ struct ListingDetailsView: View {
                                     .font(.system(size: 18))
                                 Spacer()
                             }
+                            .padding(.horizontal, 12)
                         }
                         VStack{
                             AsyncImage(url: URL(string: listing.host?.host_picture_url ?? "")) { image in
@@ -100,6 +158,7 @@ struct ListingDetailsView: View {
                             Text("\(listing.host?.host_about! ?? "")")
                                 .font(.system(size: 14))
                         }
+                        .padding(.horizontal, 12)
                         Divider()
                         //where you'll be
                         HStack{
@@ -107,15 +166,36 @@ struct ListingDetailsView: View {
                                 .font(.system(size: 18))
                             Spacer()
                         }
+                        .padding(.horizontal, 12)
                         VStack{
                             Map(){
                                 let coords = listing.address?.location?.coordinates?.compactMap { $0 }
-                                Marker("\(coords?.first ?? 0.0)", coordinate:
-                                        CLLocationCoordinate2D(latitude: listing.address?.location?.coordinates?[1] ?? 0.0,
-                                                               longitude: listing.address?.location?.coordinates?[0] ?? 0.0))
+//                                Marker("\(coords?.first ?? 0.0)", coordinate:
+//                                        CLLocationCoordinate2D(latitude: listing.address?.location?.coordinates?[1] ?? 0.0,
+//                                                               longitude: listing.address?.location?.coordinates?[0] ?? 0.0))
+                                Marker("\(listing.address?.street ?? "")", coordinate:
+                                        CLLocationCoordinate2D(latitude: 21.28634,
+                                                               longitude: -157.83919))
                             }
                             .padding()
                             .frame(height: 250)
+                        }
+                        Divider()
+                        //Neighbourhood overview
+                        HStack{
+                            Text("Neighbourhood overview")
+                                .font(.system(size: 18))
+                            
+                            Spacer()
+                        }
+                        .padding(.horizontal, 12)
+                        HStack{
+                            VStack(alignment: .leading){
+                                Text("\(listing.neighborhood_overview!)")
+                                    .font(.system(size: 14))
+                            }
+                            .padding()
+                            Spacer()
                         }
                         Divider()
                         //The basics
@@ -125,8 +205,9 @@ struct ListingDetailsView: View {
                             
                             Spacer()
                         }
+                        .padding(.horizontal, 12)
                         HStack{
-                            VStack{
+                            VStack(alignment: .leading){
                                 Text("\(listing.minimum_nights!) minimum night stay ")
                                     .font(.system(size: 14))
                                 Text("\(listing.maximum_nights!) maximum night stay ")
@@ -137,11 +218,14 @@ struct ListingDetailsView: View {
                                     
                                 } label: {
                                     Text("Show more")
+                                        .underline()
                                         .font(.system(size:12))
                                         .fontWeight(.semibold)
+                                        .foregroundStyle(.black)
                                 }
 
                             }
+                            .padding()
                             Spacer()
                         }
                         Divider()
@@ -152,6 +236,7 @@ struct ListingDetailsView: View {
                             
                             Spacer()
                         }
+                        .padding(.horizontal, 12)
 //                        HStack{
 //                            VStack{
 //                                Text("\(listing.minimum_nights!) minimum night stay ")
@@ -173,38 +258,75 @@ struct ListingDetailsView: View {
 //                        }
                         Spacer()
                     }//end if
-                }//vstack
+                }//main vstack
                 .ignoresSafeArea()
                 .task {
                     vm.loadListingDetails()
                 }//task
             }//scrollview
             .ignoresSafeArea()
-
-            
+            ZStack{
+                if let listing = vm.listing {
+                    HStack{
+                        VStack(alignment: .leading){
+                            HStack{
+                                Text("$\(String(format:"%.2f", listing.price ?? 0.0))")
+                                    .fontWeight(.semibold)
+                                Text("per guest")
+                                    .font(.caption)
+                            }
+                            
+                            Text("Closes \(Date.now.formatted(date: .abbreviated, time: .shortened))")
+                                .font(.caption)
+                        }
+                        Spacer()
+                        Button {
+                            print("request")
+                        } label: {
+                            Text("Request")
+                                .foregroundStyle(.white)
+                                .font(.system(size: 14))
+                                .fontWeight(.semibold)
+                            
+                        }
+                        .frame(width: 100, height: 5)
+                        .padding()
+                        .background(.pink)
+                        .cornerRadius(5)
+                    }
+                    .padding(.horizontal)
+                    .padding(.top, 10)
+                    .padding(.bottom, 50)
+                    .overlay(
+                            RoundedRectangle(cornerRadius: 0)
+                                .stroke(.secondary, lineWidth: 0.2)
+                        )
+                }//end if
+            }//Tab zstack
+            .padding(.bottom, -50)
         }//navigation stack
-        .toolbar{
-                ToolbarItemGroup(placement: .topBarTrailing) {
-                    //share button
-                    Button {
-                        print()
-                    } label: {
-                        Image(systemName: "square.and.arrow.up")
-                           
-                    }
-                    .padding()
-                    .cornerRadius(25)
-                    //like button
-                    Button {
-                        print()
-                    } label: {
-                        Image(systemName: "heart")
-                           
-                    }
-                    .padding()
-                    .cornerRadius(25)
-                }
-        }
+//        .toolbar{
+//                ToolbarItemGroup(placement: .topBarTrailing) {
+//                    //share button
+//                    Button {
+//                        print()
+//                    } label: {
+//                        Image(systemName: "square.and.arrow.up")
+//                           
+//                    }
+//                    .padding()
+//                    .cornerRadius(25)
+//                    //like button
+//                    Button {
+//                        print()
+//                    } label: {
+//                        Image(systemName: "heart")
+//                           
+//                    }
+//                    .padding()
+//                    .cornerRadius(25)
+//                }
+//        }
     }
 }
 
