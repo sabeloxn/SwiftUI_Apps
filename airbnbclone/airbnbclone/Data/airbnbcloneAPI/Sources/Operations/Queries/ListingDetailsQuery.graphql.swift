@@ -7,7 +7,7 @@ public class ListingDetailsQuery: GraphQLQuery {
   public static let operationName: String = "ListingDetails"
   public static let operationDocument: ApolloAPI.OperationDocument = .init(
     definition: .init(
-      #"query ListingDetails($id: ID!) { listingAndReview(ID: $id) { __typename _id name host { __typename host_name host_about host_identity_verified host_has_profile_pic host_picture_url host_listings_count } summary address { __typename location { __typename coordinates } street } neighborhood_overview accommodates price images { __typename picture_url } minimum_nights maximum_nights guests_included } }"#
+      #"query ListingDetails($id: ID!) { listingAndReview(ID: $id) { __typename _id name host { __typename host_name host_about host_identity_verified host_has_profile_pic host_picture_url host_listings_count } summary address { __typename location { __typename coordinates is_location_exact type } street } neighborhood_overview accommodates price images { __typename picture_url } minimum_nights maximum_nights guests_included } }"#
     ))
 
   public var id: ID
@@ -120,9 +120,13 @@ public class ListingDetailsQuery: GraphQLQuery {
           public static var __selections: [ApolloAPI.Selection] { [
             .field("__typename", String.self),
             .field("coordinates", [Double?]?.self),
+            .field("is_location_exact", Bool?.self),
+            .field("type", String?.self),
           ] }
 
           public var coordinates: [Double?]? { __data["coordinates"] }
+          public var is_location_exact: Bool? { __data["is_location_exact"] }
+          public var type: String? { __data["type"] }
         }
       }
 

@@ -170,12 +170,14 @@ struct ListingDetailsView: View {
                         VStack{
                             Map(){
                                 let coords = listing.address?.location?.coordinates?.compactMap { $0 }
-//                                Marker("\(coords?.first ?? 0.0)", coordinate:
-//                                        CLLocationCoordinate2D(latitude: listing.address?.location?.coordinates?[1] ?? 0.0,
-//                                                               longitude: listing.address?.location?.coordinates?[0] ?? 0.0))
-                                Marker("\(listing.address?.street ?? "")", coordinate:
-                                        CLLocationCoordinate2D(latitude: 21.28634,
-                                                               longitude: -157.83919))
+                                let isExact = (listing.address?.location?.is_location_exact)! ? false:true
+                                let image = isExact ? "unverified":"verified"
+                                Marker("\(listing.address?.street ?? "")",image:image , coordinate:
+                                        CLLocationCoordinate2D(latitude: listing.address?.location?.coordinates?[1] ?? 0.0,
+                                                               longitude: listing.address?.location?.coordinates?[0] ?? 0.0))
+//                                Marker("\(listing.address?.street ?? "")", coordinate:
+//                                        CLLocationCoordinate2D(latitude: 21.28634,
+//                                                               longitude: -157.83919))
                             }
                             .padding()
                             .frame(height: 250)

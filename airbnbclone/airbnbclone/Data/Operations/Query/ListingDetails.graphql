@@ -14,6 +14,8 @@ query ListingDetails($id: ID!) {
     address {
       location {
         coordinates
+        is_location_exact
+        type
       }
       street
     }
