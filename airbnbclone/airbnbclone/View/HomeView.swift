@@ -57,6 +57,9 @@ struct HomeView: View {
                 }
             }
             .ignoresSafeArea()
+            .onAppear{
+                UITabBar.appearance().barTintColor = .white
+            }
             
         }
         .navigationBarTitleDisplayMode(.inline)

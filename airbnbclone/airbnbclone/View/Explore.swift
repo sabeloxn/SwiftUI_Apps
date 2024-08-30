@@ -48,6 +48,7 @@ struct Explore: View {
                 .scrollIndicators(.hidden)
                 .listRowSeparator(.hidden)
                 .listStyle(.plain)
+                
                 .task {
                     vm.loadMorePlanets()
                 }
